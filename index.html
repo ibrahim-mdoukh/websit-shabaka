@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shabaka</title>
+  <!-- normalise css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- main file css -->
+  <link rel="stylesheet" href="css/master.css" />
+  <!-- madi css -->
+  <link rel="stylesheet" href="css/madi.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <script src="https://kit.fontawesome.com/9746d14c15.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- main header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="row" id="nav">
+        <a href="index.html">
+          <figure>
+            <img src="img/logo.png" alt="" />
+          </figure>
+        </a>
+        <div class="nav-link" id="navLinks">
+          <button  onclick="hidemenu()">
+            <i class="fa-sharp fa-solid fa-xmark" ></i>
+          </button>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTENT</a></li>
+          </ul>
+        </div>
+        <button  onclick="showmenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <!-- main header -->
+  <main id="body">
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="text-box">
+          <h1>Welcom To Shabaka</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            asperiores cum ut dicta atque fghdf dfghdfg
+          </p>
+          <a href="">Visit Us Uo Know More </a>
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+    <!-- course -->
+    <section class="course">
+      <div class="container">
+        <header>
+          <h3>Course We Offer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </header>
+        <div class="row">
+          <div class="col">
+            <h4>Programming</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+              provident consequuntur doloremque optio ipsum voluptate aliquam.
+              Obcaecati quia a repellendus vero, dolorum accusamus corrupti
+              nam minus impedit ab, natus dolore?
+            </p>
+          </div>
+          <div class="col">
+            <h4>Design</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+              provident consequuntur doloremque optio ipsum voluptate aliquam.
+              Obcaecati quia a repellendus vero, dolorum accusamus corrupti
+              nam minus impedit ab, natus dolore?
+            </p>
+          </div>
+          <div class="col">
+            <h4>Various courses</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+              provident consequuntur doloremque optio ipsum voluptate aliquam.
+              Obcaecati quia a repellendus vero, dolorum accusamus corrupti
+              nam minus impedit ab, natus dolore?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- course -->
+
+    <!-- workplaces -->
+    <section class="w-places">
+      <div class="container">
+        <header>
+          <h3>Our Workplaces</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </header>
+        <div class="row">
+          <div class="col">
+            <img src="img/gorden.png" alt="" />
+            <div class="layer">
+              <h5>Gorden</h5>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/gaza.png" alt="" />
+            <div class="layer">
+              <h5>Gaza</h5>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/londone.png" alt="" />
+            <div class="layer">
+              <h5>Londone</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- workplaces -->
+
+  </main>
+  <!-- js -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    var body = document.getElementById("body")
+    var nav = document.getElementById("nav")
+    function showmenu() {
+      navLinks.style.left = "0";
+      body.style.opacity= '0.7'
+    }
+
+    function hidemenu() {
+      navLinks.style.left = "-300px";
+      body.style.opacity= '1'
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+@media (min-width: 1150px) {
+    .container {
+        width: 1130px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .container {
+        width: 991px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 786px) {
+    .container {
+        width: 576px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .main-header .nav-link ul  li{
+        display: block;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .main-header .nav-link{
+        position:absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        left: -300px;
+        z-index: 2;
+        transition: 1s ;
+        -webkit-transition: 1s ;
+        -moz-transition: 1s ;
+        -ms-transition: 1s ;
+        -o-transition: 1s ;
+    }
+    .main-header nav i {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .main-header nav button{
+        display: block;
+    }
+
+    .main-header .nav-link ul{
+        padding: 30px;
+    }
+
+    .course .row{
+        flex-direction: column;
+    }
+
+    .w-places .row{
+        flex-direction: column;
+    }
+    
+    .facilities .row{
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 595px) {
+    .container {
+        width: 100%;
+    }
+}
